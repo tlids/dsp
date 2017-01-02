@@ -9,16 +9,16 @@ tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehard
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > pwd: print working direcotry
-> > mkdir: make directory
-> > cd: change directory
-> > ls: list directory
-> > rmdir: remove directory
-> > cp: copy a file or directory
-> > mv: move a file or directory
-> > env: look at your enviroment
-> > exit: exit the shell
-> > cat: print the whole file
+> > pwd: print working direcotry  
+> > mkdir: make directory  
+> > cd: change directory  
+> > ls: list directory  
+> > rmdir: remove directory  
+> > cp: copy a file or directory  
+> > mv: move a file or directory  
+> > env: look at your enviroment  
+> > exit: exit the shell  
+> > cat: print the whole file  
 
 ---
 
