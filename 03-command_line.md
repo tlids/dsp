@@ -48,7 +48,7 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > My favorite 5 are: ls -a, ls -d, ls -l, ls -t, ls -R.
 
 ---
 
@@ -56,7 +56,6 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+> > xargs: construct argument list(s) and execute utility.
  
 
