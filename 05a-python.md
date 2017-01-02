@@ -47,7 +47,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
         ('jane', 'B', 12),  
         ('dave', 'B', 10),  
 ]  
->> sorted(student_tuples, key=lambda student: student[2])   # sort by age
+>> sorted(student_tuples, key=lambda student: student[2])   # sort by age  
 [('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]  
 
 ---
@@ -56,7 +56,9 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehension provides a concise way to create lists. Common applications are to make new lists where each element is the result of some operations applied to each member of another sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition.
+>> List comprehension example: 
+
 
 ---
 
