@@ -33,7 +33,14 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls: list directory  
+> > ls -a: include directory entires whose names begin with a dot (.).  
+> > ls -l: list in long format.  
+> > ls -lh: list in long format and shows the file size with units.  
+> > ls -lah: list in long format, include directory entires whose names begin with a dot (.) and shows the file size with units.  
+> > ls -t: list directory and sort by time modified.  
+> > ls -Glp: list in long format with color and write a / after the files that are directories.  
+
 
 ---
 
