@@ -19,7 +19,17 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> import pandas as pd  
+>> faculty = pd.read_csv('/Users/xiangli/ds/metis/metisgh/prework/dsp/python/faculty.csv')  
+>> degree = faculty[' degree']  
+>> degree.describe()  
+>> from collections import Counter  
+>> counts = Counter(degree)  
+>> print counts  
+
+>> outputs:  
+>> 11.  
+>> {' Ph.D.': 15, ' PhD': 7, ' Sc.D.': 4, ' Ph.D': 4, ' MD MPH Ph.D': 1, 'Ph.D.': 1, ' ScD': 1, '0': 1, ' PhD ScD': 1, ' B.S.Ed. M.S. Ph.D.': 1, ' JD MA MPH MS PhD': 1})  
 
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
