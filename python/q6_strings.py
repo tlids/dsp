@@ -60,10 +60,10 @@ def fix_start(s):
     string is length 1 or more.
     
     def fix_start(s):
-    char = s[0]
-    s = s.replace(char, '*')
-    s = char + s[1:]
-    return s
+        char = s[0]
+        s = s.replace(char, '*')
+        s = char + s[1:]
+        return s
 
     >>> fix_start('babble')
     'ba**le'
@@ -136,15 +136,15 @@ def not_bad(s):
     good!'
     
     def not_bad(s):
-    not_pos = s.find('not') 
-    if not_pos == -1:
-        return s
-    else:
-        if not_pos < s.find('bad'):
-            s = s[:not_pos] + 'good'
+        not_pos = s.find('not') 
+        if not_pos == -1:
             return s
         else:
-            return s
+            if not_pos < s.find('bad'):
+                s = s[:not_pos] + 'good'
+                return s
+            else:
+                return s
 
     >>> not_bad('This movie is not so bad')
     'This movie is good'
