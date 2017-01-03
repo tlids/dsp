@@ -1,9 +1,14 @@
+#output is seperated into single characters for each row?
+
 import os
 os.getcwd()
 
-file_1 = open('emails.csv', 'w')
-print file 
+import csv
 
-file_1.write(email)
+with open('emails.csv', 'w') as ef:
+    a = csv.writer(ef, delimiter=',')
+    email = faculty[' email']
+    a.writerows(email)
+    
+ef.close
 
-file_1.close
