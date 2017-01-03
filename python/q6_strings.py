@@ -33,6 +33,12 @@ def both_ends(s):
     2 chars of the original string, so 'spring' yields 'spng'.
     However, if the string length is less than 2, return instead the
     empty string.
+    
+    def both_ends(s):
+    if len(s) < 2:
+        return ''
+    else:
+        return s[0:2] + s[-2:]
 
     >>> both_ends('spring')
     'spng'
@@ -52,6 +58,12 @@ def fix_start(s):
     first char have been changed to '*', except do not change the
     first char itself. e.g. 'babble' yields 'ba**le' Assume that the
     string is length 1 or more.
+    
+    def fix_start(s):
+    char = s[0]
+    s = s.replace(char, '*')
+    s = char + s[1:]
+    return s
 
     >>> fix_start('babble')
     'ba**le'
@@ -70,6 +82,12 @@ def mix_up(a, b):
     Given strings a and b, return a single string with a and b
     separated by a space '<a> <b>', except swap the first 2 chars of
     each string. Assume a and b are length 2 or more.
+    
+    def mix_up(a, b):
+        first = a[:2]
+        second = b[:2]
+        s = second + a[2:] + ' ' + first + b[2:]
+        return s
 
     >>> mix_up('mix', 'pod')
     'pox mid'
@@ -89,6 +107,15 @@ def verbing(s):
     Unless it already ends in 'ing', in which case add 'ly' instead.
     If the string length is less than 3, leave it unchanged. Return
     the resulting string.
+    
+    def verbing(s):
+        if len(s) > 2:
+            if s[-3:] == 'ing':
+                return s + 'ly'
+            else:
+                return s + 'ing'
+        else:
+            return s
 
     >>> verbing('hail')
     'hailing'
