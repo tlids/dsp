@@ -134,6 +134,17 @@ def not_bad(s):
     'not'...'bad' substring with 'good'. Return the resulting string.
     So 'This dinner is not that bad!' yields: 'This dinner is
     good!'
+    
+    def not_bad(s):
+    not_pos = s.find('not') 
+    if not_pos == -1:
+        return s
+    else:
+        if not_pos < s.find('bad'):
+            s = s[:not_pos] + 'good'
+            return s
+        else:
+            return s
 
     >>> not_bad('This movie is not so bad')
     'This movie is good'
@@ -155,6 +166,24 @@ def front_back(a, b):
     'abcde', the front half is 'abc', the back half 'de'. Given 2
     strings, a and b, return a string of the form a-front + b-front +
     a-back + b-back
+    
+    def front_back(a, b):
+    
+    if len(a) % 2:
+        a_front = a[:(len(a)/2)]
+        a_back = a[(len(a)/2):]
+    else: 
+        a_front = a[:(len(a)/2)+1]
+        a_back = a[(len(a)/2)+1:]     
+    
+    if len(b) % 2:
+        b_front = b[:(len(b)/2)]
+        b_back = b[(len(b)/2):]
+    else: 
+        b_front = b[:(len(b)/2)+1]
+        b_back = b[(len(b)/2)+1:]     
+    
+    return a_front + b_front + a_back + b_back
 
     >>> front_back('abcd', 'xy')
     'abxcdy'
