@@ -38,4 +38,4 @@ def find_min(data):
   
   find_min(football)
   
-  print football['Team'][19]
+  print football['Team'][find_min(football)]
