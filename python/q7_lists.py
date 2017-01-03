@@ -16,12 +16,12 @@ def match_ends(words):
     1
     """
     def match_ends(words):
-    count = 0
-    for e in words:
-        if len(e) > 1:
-            if e[0] == e[-1]:
-                count += 1
-    return count
+        count = 0
+        for e in words:
+            if len(e) > 1:
+                if e[0] == e[-1]:
+                    count += 1
+        return count
 
     raise NotImplementedError
 
@@ -40,6 +40,18 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
+   
+    list_x = []
+    list_other = []
+    
+    for word in words:
+        if word[0] == 'x':
+            list_x.append(word)
+        else:
+            list_other.append(word)
+    
+    return sorted(list_x) + sorted(list_other)
+   
     raise NotImplementedError
 
 
@@ -76,6 +88,14 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
+    
+    def remove_adjacent(nums):
+        res = []
+        for num in nums:
+            if len(res) == 0 or num != res[-1]:
+                res.append(num)
+        return res    
+
     raise NotImplementedError
 
 
