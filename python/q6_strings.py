@@ -8,6 +8,10 @@ def donuts(count):
     form 'Number of donuts: <count>', where <count> is the number
     passed in. However, if the count is 10 or more, then use the word
     'many' instead of the actual count.
+    if count > 10:
+        return "many"
+    else:
+        "Number of donuts: " + count
 
     >>> donuts(4)
     'Number of donuts: 4'
