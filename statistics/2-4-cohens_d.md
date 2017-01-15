@@ -6,4 +6,4 @@
 >> other_wgt = others.totalwgt_lb  
 >> CohenEffectSize(first_wgt, other_wgt)  
 
->> The result is -0.089. Which means the difference in means is -0.089 standard deviation, which is relatively small. 
+>> The result is -0.089, meaning the difference in means is -0.089 standard deviation, which is relatively small. 
