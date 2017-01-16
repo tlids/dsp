@@ -12,3 +12,50 @@ ff
 # Import & exam the data
 resp = nsfg.ReadFemResp()
 resp.head()
+
+# Load the variable
+actual_kids = resp.numkdhh
+actual_kids.head()
+
+# Create a pmf for the number of children under 18 from variable numkdhh
+pmf = thinkstats2.Pmf(actual_kids)
+pmf
+
+# Plot the actual distribution
+thinkplot.Pmf(pmf, label = 'Actual Kids')
+thinkplot.Config(xlabel='Actual number of children under 18 in households', ylabel='PMF')
+
+import matplotlib
+import matplotlib.pyplot as plt
+
+plt.savefig('actual_distribution.png')
+
+# Plot the biased distribution
+def BiasPmf(pmf, label):
+    new_pmf = pmf.Copy(label=label)
+
+    for x, p in pmf.Items():
+        new_pmf.Mult(x, x)
+        
+    new_pmf.Normalize()
+    return new_pmf
+    
+biased_pmf = BiasPmf(pmf, 'Bias Kids')
+
+thinkplot.Pmf(biased_pmf, label = 'Biased Kids')
+thinkplot.Config(xlabel='Biased number of children under 18 in households', ylabel='Biased PMF')
+
+plt.savefig('biased_distribution.png')
+
+# Plot the actual and biased distribution together
+thinkplot.PrePlot(2)
+thinkplot.Pmfs([pmf, biased_pmf])
+thinkplot.Config(xlabel='number of children', ylabel='PMF')
+
+plt.savefig('actual & biased_distribution.png')
+
+# Calculate the mean
+pmf_mean = pmf.Mean()
+biased_pmf_mean = biased_pmf.Mean()
+print (pmf_mean)
+print (biased_pmf_mean)
