@@ -38,7 +38,7 @@ plt.savefig('random number distribution')
 
 ![png](random number distribution.png)
 
-#### Since there are a lot of discreate values, it is hard to observe the distribution from this graph. We can plot a CDF and see if CDF can provide us more insights to the distribution.
+#### Since there are a lot of discreate values, it is hard to observe the distribution from this Pmf graph. We can plot a CDF and see if CDF can provide us more insights to the distribution.
 
 ```python
 # Create the CDF
