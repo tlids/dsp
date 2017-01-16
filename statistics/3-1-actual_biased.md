@@ -7,3 +7,6 @@ Now compute the biased distribution we would see if we surveyed the children and
 Plot the actual and biased distributions, and compute their means. As a starting place, you can use chap03ex.ipynb.
 
 ### Solution
+
+```python
+resp = nsfg.ReadFemResp()
