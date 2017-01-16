@@ -37,3 +37,23 @@ plt.savefig('random number distribution')
 ```
 
 ![png](random number distribution.png)
+
+#### Since there are a lot of discreate values, it is hard to observe the distribution from this graph. We can plot a CDF and see if CDF can provide us more insights to the distribution.
+
+```python
+# Create the CDF
+
+cdf = thinkstats2.Cdf(q, label='random numbers')
+
+# Plot the CDF
+
+thinkplot.Cdf(cdf)
+thinkplot.Config(xlabel='random number', ylabel='CDF')
+
+plt.savefig('random number CDF')
+
+```
+
+![png](random number CDF.png)
+
+#### From the CDF plot, we can tell that the distribution of the 1000 random numbers is uniform, as the CDF shows a smooth 45% degree straight line from 0 to 1.
