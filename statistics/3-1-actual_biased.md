@@ -30,6 +30,8 @@ import matplotlib.pyplot as plt
 
 plt.savefig('actual_distribution.png')
 
+![png](actual_distribution.png)
+
 # Plot the biased distribution
 def BiasPmf(pmf, label):
     new_pmf = pmf.Copy(label=label)
