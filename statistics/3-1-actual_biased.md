@@ -72,3 +72,7 @@ pmf_mean = pmf.Mean()
 biased_pmf_mean = biased_pmf.Mean()
 print (pmf_mean)
 print (biased_pmf_mean)
+```
+
+#### Mean for actual distribution: 1.02420515504
+#### Mean for biased distribution: 2.40367910066
