@@ -4,8 +4,8 @@
 Exercise 3.1 Something like the class size paradox appears if you survey children and ask how many children are in their family. Families with many children are more likely to appear in your sample, and families with no chil- dren have no chance to be in the sample.
 Use the NSFG respondent variable NUMKDHH to construct the actual distribu- tion for the number of children under 18 in the household.
 Now compute the biased distribution we would see if we surveyed the children and asked them how many children under 18 (including themselves) are in their household.
-Plot the actual and biased distributions, and compute their means. As a starting place, you can use chap03ex.ipynb.
-ff
+Plot the actual and biased distributions, and compute their means. As a starting place, you can use chap03ex.ipynb.  
+
 ### Solution
 
 ```python
@@ -52,14 +52,21 @@ thinkplot.Pmf(biased_pmf, label = 'Biased Kids')
 thinkplot.Config(xlabel='Biased number of children under 18 in households', ylabel='Biased PMF')
 
 plt.savefig('biased_distribution.png')
+```
 
+![png](biased_distribution.png)
+
+```python
 # Plot the actual and biased distribution together
 thinkplot.PrePlot(2)
 thinkplot.Pmfs([pmf, biased_pmf])
 thinkplot.Config(xlabel='number of children', ylabel='PMF')
 
 plt.savefig('actual & biased_distribution.png')
+```
+![png](actual & biased_distribution.png)
 
+```python
 # Calculate the mean
 pmf_mean = pmf.Mean()
 biased_pmf_mean = biased_pmf.Mean()
