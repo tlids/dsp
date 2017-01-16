@@ -27,13 +27,15 @@ thinkplot.Config(xlabel='Actual number of children under 18 in households', ylab
 
 import matplotlib
 import matplotlib.pyplot as plt
-```
+
 
 plt.savefig('actual_distribution.png')
 
-```python
+```
+
 ![png](actual_distribution.png)
 
+```python
 # Plot the biased distribution
 def BiasPmf(pmf, label):
     new_pmf = pmf.Copy(label=label)
